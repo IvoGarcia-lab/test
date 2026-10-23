@@ -1,0 +1,6 @@
+{
+  "name": "ATELIER CALM - Galeria Arquitetónica & Reconhecimento Geográfico IA",
+  "description": "Galeria editorial e curadoria arquitetónica com reconhecimento multimodal Gemini de edifícios, coordenadas geográficas e mapeamento cartográfico em tempo real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

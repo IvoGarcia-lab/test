@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --font-serif: "Cormorant Garamond", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", Menlo, Monaco, Consolas, monospace;
+  
+  --bg-mineral: #fbf9f5;
+  --bg-surface: #f4efe6;
+  --border-stone: #e5dfd3;
+  --border-stone-subtle: #eeeaee;
+  --text-ink: #1c1917;
+  --text-muted: #6b6357;
+  --accent-bronze: #8c6239;
+  --accent-terra: #a44826;
+  --accent-sage: #5b6955;
+}
+
+body {
+  background-color: var(--bg-mineral);
+  color: var(--text-ink);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Custom architectural map styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #f4efe6 !important;
+  font-family: var(--font-sans);
+}
+
+/* Elegant architectural marker popup styling */
+.leaflet-popup-content-wrapper {
+  background: #fbf9f5 !important;
+  color: #1c1917 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 12px 30px -4px rgba(28, 25, 23, 0.15), 0 4px 12px -2px rgba(28, 25, 23, 0.08) !important;
+  border: 1px solid #e5dfd3 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #fbf9f5 !important;
+  border-left: 1px solid #e5dfd3 !important;
+  border-top: 1px solid #e5dfd3 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f4efe6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4ccbd;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8ad9b;
+}
